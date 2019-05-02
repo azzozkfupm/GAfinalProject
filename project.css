@@ -6,6 +6,20 @@ padding:1px;
 text-align:center;
 }
 
+h1 {
+text-align: center;
+
+
+}
+.btn{
+    
+    position: absolute;
+    background: #fff;
+    color: black;
+    top: 50%;
+    left:50%;
+}
+
 /* Canvas with puzzle */
 .puzcnv {
 display:block;

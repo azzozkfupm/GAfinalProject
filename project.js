@@ -1,6 +1,11 @@
 
 $(document).ready(function () {
 var linkpp;
+$("div").hide();
+$('#playbtn').click(function(){
+  $("div").show();
+  $('#playbtn').hide();
+});
 
 
     $.ajax ({
@@ -15,7 +20,7 @@ var linkpp;
       console.log(linkpp);
       
         //  $('body').css('background-image', 'url(' + result.urls.regular + ')');
-          var puz1 = new PuzzleImg('puz1', im, 3, 3, 243, 243);
+          var puz1 = new PuzzleImg('puz1', im, 5, 5, 400, 400);
         
       },
       error:function(result){
@@ -78,6 +83,10 @@ var linkpp;
       var btn =document.createElement('button');
         btn.setAttribute('id',id_p +'_solv')
         btn.setAttribute('class','puzsolve')
+        $(btn).text('solve')
+
+     //   btn.text('solve')
+        
         parent.appendChild(btn); 
     
 
